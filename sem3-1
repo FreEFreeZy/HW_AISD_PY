@@ -1,0 +1,18 @@
+values = [False, True]
+for i in range(2):
+    a = values[i]
+    for j in range(2):
+        b = values[j]
+        c1 = not(a or b)
+        c2 = not(a) and not(b)
+        d1 = not(a and b)
+        d2 = not(a) or not(b)
+        print(f'a = {a}, b = {b}', end = ', ')
+        if c1 == c2:
+            print('res1 = True', end = ', ')
+        else:
+            print('res1 = False', end = ', ')
+        if d1 == d2:
+            print('res2 = True')
+        else:
+            print('res2 = False')
